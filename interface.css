@@ -1,0 +1,67 @@
+h2, p { 
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: currentColor;
+}
+
+#header {
+    text-align: center;
+    background: aliceblue;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Black Ops One', cursive;
+}
+
+.header__title {
+    margin-bottom: 1rem;
+}
+
+.card {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    border: 5px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+#img {
+    padding-top: 1rem;
+}
+
+.img-container {
+    text-align: center;
+}
+
+#porta-title {
+    color: aliceblue;
+}
+
+.img-porta {
+    opacity: 50%;
+    filter: brightness(1.5);
+    width: 50%;
+    height: 70%;
+}
+
+#presenca-title {
+    color: aliceblue;
+}
+
+.img-presenca {
+    opacity: 50%;
+    filter: brightness(1.5);
+    width: 50%;
+    height: 70%
+}
