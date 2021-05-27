@@ -56,7 +56,7 @@ body {
 }
 
 #presenca-title {
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .img-presenca {
@@ -64,4 +64,20 @@ body {
     filter: brightness(1.5);
     width: 50%;
     height: 70%
+}
+
+.card-height {
+    height: 200px;
+}
+
+#icon_light, #icon_thermostat, #icon_theaters, #icon_sensor-door {
+    font-size: 54px;
+}
+
+.btn {
+    width: 100%;
+    width: 80%;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
 }
