@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IOT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+    <link rel="stylesheet" type="text/css" href="interface.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="config.js"></script>
+    <script src="interface.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header__title">
+            <h2>Projeto IOT</h2>
+        </div>
+        <div class="header__subTitle">
+            <p>Alvaro Batista</p>
+            <p>Gabriel Cezario</p>
+            <p>Walber Araujo</p>
+        </div>
+    </header>
+    <main>
+        <section id="cards">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                        <h5 class="card-title">Distancia</h5>
+                        <p id="distanciaValue" class="card-text"></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                        <h5 class="card-title">Temperatura</h5>
+                        <p id="temperaturaValue" class="card-text"></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Luminosidade</h5>
+                          <p id="luminosidadeValue" class="card-text"></p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Umidade</h5>
+                          <p id="umidadeValue" class="card-text"></p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="img">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 img-container">
+                    <h5 id="porta-title">Porta Aberta</h5>
+                    <img id="porta" class="img-porta" src="porta_aberta.jpg" alt="">
+                  </div>
+                  <div class="col-sm-6 img-container">
+                    <h5 id="presenca-title">Presença Não Detectada</h5>
+                    <img id="presenca" class="img-presenca" src="presenca_nao_detectada.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="card text-center card-height">
+                    <div class="card-body">
+                        <i id="icon_light" class="material-icons">light</i>
+                        <button id="btn-light" type="button" class="btn btn-dark">Set_luminosidade</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card text-center card-height">
+                    <div class="card-body">
+                        <i id="icon_thermostat" class="material-icons">thermostat</i>
+                        <button id="btn_thermostat" type="button" class="btn btn-dark">Set_temperatura</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card text-center card-height">
+                    <div class="card-body">
+                        <i id="icon_theaters" class="material-icons">theaters</i>
+                        <button id="btn_theaters" type="button" class="btn btn-dark">Set_multimidia</button>
+                     </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card text-center card-height">
+                    <div class="card-body">
+                        <i id="icon_sensor-door" class="material-icons">sensor_door</i>
+                        <button id="btn_icon_sensor-door" type="button" class="btn btn-dark">Set_porta</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
